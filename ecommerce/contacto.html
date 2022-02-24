@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-WEB-contacto</title>
+    <link rel="icon" type="image.png" href="img/camara005.png">
+    <!-- css -->
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Open+Sans&family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+</head> 
+<body>
+    <header class="nombre-sitio">
+        <h1>Tienda <span>Muebles</span> </h1>
+    </header>
+    <div class="nav-contenedor">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <!-- categorias -->
+   
+    
+    <!-- Nuestros Productos -->
+    <main class="contenido-principal contenedor bg-img1">
+        <h2 class="texto-centrado">CONTACTO</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombres</label>
+                    <input class="input"  id="nombre" type="text" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <input class="input" id="asunto" type="text" placeholder="Asunto">
+                </div>
+                <div class="campo">
+                    <label for="E-mail">Email</label>
+                    <input class="input" id="E-mail" type="email" placeholder="Escribe tu correo" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Telefono</label>
+                    <input class="input" id="tel" type="tel" placeholder="tu telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Mensaje</label>
+                    <TExtarea rows="10" cols="60"> </TExtarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pais</legend> 
+                <div class="campo">
+                    <label for="pais"></label>
+                    <select class="input" name="" id="pais">
+                        <option disabled value="">--Seleccione---</option>
+                        <option value="pais">Mexico</option>
+                        <option selected value="pais">Peru</option>
+                        <option  value="pais">Colombia</option>
+                        <option value="pais">Argentina</option>
+                        <option value="pais">chile</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informacio extra</legend>
+                <div class="campo">
+                    <label for="Cliente">Cliente</label>
+                    <input id="Cliente" type="radio" name="tipo" value="cliente">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+                <div class="campo">
+                    <label for="categoria">categoria de interes</label>
+                    <input class="input" list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="exterios">
+                        <option value="recamaras">
+                        <option value="oficina">
+                        <option value="television">
+                    </datalist>
+                </div>
+            </fieldset>
+            <input class="btn form-btn" type="submit" value="Enviar formulario">
+        </form>       
+    </main><!-- Fin de nosotros -->
+    
+    <footer class="footer">
+        <div class="grid-foote contenedor">
+            <div>
+                <h3>categorias</h3>
+                <nav class="footer-menu">
+                    <a href="#">Gardin</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">cochera</a>
+                    <a href="#">Documentacion</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Historia</a>
+                    <a href="#">Valores</a>
+                    <a href="#">Politicas y privacidad</a>
+                    <a href="#">Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Historia</a>
+                    <a href="#">Valores</a>
+                    <a href="#">Politicas y privacidad</a>
+                    <a href="#">Servicio</a>
+                </nav>
+            </div>
+        </div>
+           <p class="copyright"> Todo los derechos reservados © Ferdinand <a class="amor" href="#">&#10084</a></p>
+    </footer>
+</body>
+</html>
